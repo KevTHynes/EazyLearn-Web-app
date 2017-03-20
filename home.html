@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Index</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="layout1.css" rel="stylesheet">
@@ -39,11 +39,22 @@
 
         <div class="cover-container">
           <nav>
+            <script> 
+
+                function show_alert() { 
+                
+                  var msg = "Click on a country!";
+                  
+                  alert(msg); 
+                
+                }
+              
+            </script>
                 <ul>
-                  <li><a href="#" class="round green">Home</a></li>
+                  <li><a href="home.html" class="round green">Home</a></li>
                   <li><a href="#" class="round red">Puzzle</a></li>
                 	<li><a href="#" class="round yellow">Grades</a></li>
-                	<li><a href="#" class="round pink">Help</a></li>
+                	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
                 </ul> 
               </nav>
 
@@ -55,6 +66,7 @@
           </div>
 
           <div class="inner cover">
+            <h2>Hello Kevin! Lets play!</h2>
             <h1 class="cover-heading">Click a country to learn!</h1>
             <img src="Images/Cartoonmap.jpg" height="500" width="500">
           </div>
