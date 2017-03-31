@@ -9,7 +9,10 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Puzzles</title>
+    <title>Index</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="layout1.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -40,7 +43,7 @@
 
                 function show_alert() { 
                 
-                  var msg = "Select a game!";
+                  var msg = "Look at your grades!";
                   
                   alert(msg); 
                 
@@ -48,10 +51,10 @@
               
             </script>
                 <ul>
-                  <li><a href="home.html" class="round green">Home</a></li>
-                  <li><a href="puzzle.html" class="round red">Puzzle</a></li>
-                	<li><a href="achieve.html" class="round yellow">Grades</a></li>
-                	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
+                  <li><a href="#" class="round green">Home</a></li>
+                  <li><a href="#" class="round red">Puzzle</a></li>
+                	<li><a href="#" class="round yellow">Grades</a></li>
+                	<li><a href="#" class="round pink">Help</a></li>
                 </ul> 
               </nav>
 
@@ -63,13 +66,17 @@
           </div>
 
           <div class="inner cover">
-            <h2>Angry Viking</h2>
-            <img src="../Images/angryviking.png" height="150" width="150"><br><br>
-            <a href="angryviking.html" class="btn btn-lg btn-default">Click here to play!</a>
-            <h2>Saint Patrick jigsaw puzzle</h2>
-            <img src="../Images/angryviking.png" height="150" width="150"><br><br>
-            <a href="angryviking.html" class="btn btn-lg btn-default">Click here to play!</a>
-          
+            <h3>Q1. Saint patrick banished what kind of animal from Ireland?</h3><br>
+            <input type="radio" name="question-1" id="question-1-answers-A" value="A" />
+            <label for="question-1-answers-A">A: Horses</label><br><br>
+            <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+            <label for="question-1-answers-B">B: Squirrels</label><br><br>
+            <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+            <label for="question-1-answers-C">C: Snakes</label><br><br>
+            <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+            <label for="question-1-answers-D">D: Cats</label><br><br>
+            <input type="submit" value="Next!" class="btn btn-lg btn-default" a href ="home.html">
+
           </div>
 
           <div class="mastfoot">
@@ -82,14 +89,5 @@
       </div>
 
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

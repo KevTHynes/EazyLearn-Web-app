@@ -1,23 +1,20 @@
 <?php
-//$error = "";
 
-//$varAge = "";
-if(!isset($_POST['formAge'])){
-      $errorMessage = "<p>You did not select your age!</p>";
-    }
-  
+//If age is not selected, error message will pop up, else, user will be directed to page depending on age selected!
+
 if(isset($_POST['submit'])){
    $varAge = $_POST['formAge'];
    $errorMessage = "";
-   header("Location: ".$_POST['formAge']);
-    exit;
-    
+   
+   if($_POST['formAge'] == ""){
+      $errorMessage = '<span style = "color:red;font-size:20px;">You did not select your age!</span><br>';
+    }
+    else{
+      header("Location: ".$_POST['formAge']);
+      exit;
+    }
 }
 
-
-
-
-//header('location: index.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,10 +64,13 @@ if(isset($_POST['submit'])){
            
               
               <form method="post" action="">
-                <h2>1. What is your name?</h2>
-                Name here: <input type="text" name="firstname"><br>
-                <h2>2. How old are you?</h2>
+                <h1>1. How old are you?</h1>
+                
+                
                 <!--"reference for option values in php code" http://stackoverflow.com/questions/19136904/get-dropdown-selected-value-and-redirect-that-page-on-button-click -->
+                 <?php
+                  echo $errorMessage ;
+                 ?>
                 <select name="formAge">
                   <option value="">Select age</option>
                   <option value="Age5to6/home.html">5 years old</option>
@@ -80,8 +80,9 @@ if(isset($_POST['submit'])){
                   <option value="Age9to10/home.html">9 years old</option>
                   <option value="Age9to10/home.html">10 years old</option>
                 </select><br>
-                <h1 class="cover-heading">Click to start learning!</h1>
+                <h1 class="cover-heading">2. Click to start learning!</h1>
                <input type="submit" name="submit" value="Begin!" class="btn btn-lg btn-default">
+              
               </form>
             
             <img src = "Images/profowl.png" height="250" width="250">
