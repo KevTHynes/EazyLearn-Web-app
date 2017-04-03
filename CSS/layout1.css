@@ -24,7 +24,7 @@ ul {
   left: 0;
   top: 0;
   width: 75%;
-  height: 75%;
+  height: 100%;
   padding-top: 30px;
   text-decoration: none;
   text-align: center;
@@ -303,4 +303,19 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+.modal-header{
+  background-color:#DCDCDC ;
+  color:black;
+}
+
+.modal-body{
+  background-color: ;
+  color:black;
+}
+
+.modal-footer{
+  background-color:#DCDCDC ;
+  color:black;
 }
