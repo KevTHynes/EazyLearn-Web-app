@@ -81,7 +81,7 @@ function process(n){
     }
   
   if(n == total){
-    $('#results').html('<h3> Your final score is: ' + score +' out of 5</h3> <a href="quiz.html"> Take Quiz Again </a>');
+    $('#results').html('<h3> Your final score is: ' + score +' out of 5</h3> <a href="irelandQ.html"> Take Quiz Again </a>');
   }
   return false;
 }
@@ -124,7 +124,7 @@ function process(n){
     if(submitted4 == sessionStorage.a5){
       score++;
     }
-    $('#results').html('<h3> Your final score is: ' + score +' out of 5</h3> <a href="quiz.html"> Take Quiz Again </a>');
+    $('#results').html('<h3> Your final score is: ' + score +' out of 5</h3> <a href="../irelandQ.html"> Take Quiz Again </a>');
   }
   return false;
 }*/
