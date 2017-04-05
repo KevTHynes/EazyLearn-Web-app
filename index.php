@@ -47,13 +47,11 @@ if(isset($_POST['submit'])){
 
     <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
-
         <div class="cover-container">
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h1 class="masthead-brand">Welcome to "My History Book"</h1>
+              <h1>Welcome to "My History Book"</h1>
               
             </div>
           </div>
@@ -90,8 +88,6 @@ if(isset($_POST['submit'])){
           </div>
 
         </div>
-
-      </div>
 
     </div>
 
