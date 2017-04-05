@@ -322,17 +322,21 @@ body {
 }
 
 .modal-header{
-  background-color:#DCDCDC ;
-  color:black;
+  background-color:black ;
+  
 }
 
 .modal-body{
-  color:black;
+  background-color:black ;
 }
 
 .modal-footer{
-  background-color:#DCDCDC ;
-  color:black;
+  background-color:black ;
+}
+
+.btn{
+  background-color:black ;
+  
 }
 table, th, td {
     border-collapse: collapse;

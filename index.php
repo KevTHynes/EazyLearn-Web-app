@@ -79,7 +79,7 @@ if(isset($_POST['submit'])){
                   <option value="Age9to10/home.html">10 years old</option>
                 </select><br>
                 <h1 class="cover-heading">2. Click to start learning!</h1>
-               <input type="submit" name="submit" value="Begin!" class="btn btn-lg btn-default">
+               <input type="submit" name="submit" value="Begin!" class="btn-default">
               
               </form>
             
