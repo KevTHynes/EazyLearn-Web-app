@@ -71,12 +71,9 @@ if(isset($_POST['submit'])){
                  ?>
                 <select name="formAge">
                   <option value="">Select age</option>
-                  <option value="Age5to6/home.html">5 years old</option>
-                  <option value="Age5to6/home.html">6 years old</option>
-                  <option value="Age7to8/home.html">7 years old</option>
-                  <option value="Age7to8/home.html">8 years old</option>
-                  <option value="Age9to10/home.html">9 years old</option>
-                  <option value="Age9to10/home.html">10 years old</option>
+                  <option value="Age5to6/home.html">5 to 6 years old</option>
+                  <option value="Age7to8/home.html">7 to 8 years old</option>
+                  <option value="Age9to10/home.html">9 to 10 years old</option>
                 </select><br>
                 <h1 class="cover-heading">2. Click to start learning!</h1>
                <input type="submit" name="submit" value="Begin!" class="btn-default">
