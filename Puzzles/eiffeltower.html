@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+    <!-- ActionScript code for the "EiffelTowerJigsaw" puzzle game:
+    	import flash.events.Event;
+stop();
+
+
+stage.addEventListener(Event.ENTER_FRAME,EntFrame);
+function EntFrame(e:Event):void{
+	
+	/* Piece 1 drag and drop code */
+	p1.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag);
+	
+	function fl_ClickToDrag(event:MouseEvent):void
+	{
+		p1.startDrag();
+		
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop);
+	
+	function fl_ReleaseToDrop(event:MouseEvent):void
+	{
+		p1.stopDrag();
+		
+
+	}
+	if (t1.hitTestObject(p1.p1t1)){
+		p1.x = 59;
+		p1.y = 100.50;
+		checkGame();
+		}
+	
+	/* Piece 2 drag and drop code */
+	p2.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_2);
+	
+	function fl_ClickToDrag_2(event:MouseEvent):void
+	{
+		p2.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_2);
+	
+	function fl_ReleaseToDrop_2(event:MouseEvent):void
+	{
+		p2.stopDrag();
+	}
+	if (t2.hitTestObject(p2.p2t2)){
+		p2.x = 52;
+		p2.y = 178.25;
+		checkGame();
+		}
+	
+	/* Piece 3 drag and drop code */
+	p3.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_3);
+	
+	function fl_ClickToDrag_3(event:MouseEvent):void
+	{
+		p3.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_3);
+	
+	function fl_ReleaseToDrop_3(event:MouseEvent):void
+	{
+		p3.stopDrag();
+	}
+	if (t3.hitTestObject(p3.p3t3)){
+		p3.x = 62.50;
+		p3.y = 279.40;
+		checkGame();
+		}
+	
+	/* Piece 4 drag and drop code */
+	p4.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_4);
+	
+	function fl_ClickToDrag_4(event:MouseEvent):void
+	{
+		p4.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_4);
+	
+	function fl_ReleaseToDrop_4(event:MouseEvent):void
+	{
+		p4.stopDrag();
+	}
+	if (t4.hitTestObject(p4.p4t4)){
+		p4.x = 64;
+		p4.y = 387;
+		checkGame();
+		}
+	
+	/* Piece 5 drag and drop code */
+	p5.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_5);
+	
+	function fl_ClickToDrag_5(event:MouseEvent):void
+	{
+		p5.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_5);
+	
+	function fl_ReleaseToDrop_5(event:MouseEvent):void
+	{
+		p5.stopDrag();
+	}
+	if (t5.hitTestObject(p5.p5t5)){
+		p5.x = 155.505;
+		p5.y = 106.50;
+		checkGame();
+		}
+	
+	/* Piece 6 drag and drop code */
+	p6.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_6);
+	
+	function fl_ClickToDrag_6(event:MouseEvent):void
+	{
+		p6.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_6);
+	
+	function fl_ReleaseToDrop_6(event:MouseEvent):void
+	{
+		p6.stopDrag();
+	}
+	if (t6.hitTestObject(p6.p6t6)){
+		p6.x = 143.15;
+		p6.y = 190.50;
+		checkGame();
+		}
+		
+	/* Piece 7 drag and drop code */
+	p7.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_7);
+	
+	function fl_ClickToDrag_7(event:MouseEvent):void
+	{
+		p7.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_7);
+	
+	function fl_ReleaseToDrop_7(event:MouseEvent):void
+	{
+		p7.stopDrag();
+	}
+	if (t7.hitTestObject(p7.p7t7)){
+		p7.x = 154.45;
+		p7.y = 282;
+		checkGame();
+		}
+	
+	/* Piece 8 drag and drop code */
+	p8.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_8);
+	
+	function fl_ClickToDrag_8(event:MouseEvent):void
+	{
+		p8.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_8);
+	
+	function fl_ReleaseToDrop_8(event:MouseEvent):void
+	{
+		p8.stopDrag();
+	}
+	if (t8.hitTestObject(p8.p8t8)){
+		p8.x = 165.25;
+		p8.y = 384;
+		checkGame();
+		}
+		
+	/* Piece 9 drag and drop code */
+	p9.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_9);
+	
+	function fl_ClickToDrag_9(event:MouseEvent):void
+	{
+		p9.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_9);
+	
+	function fl_ReleaseToDrop_9(event:MouseEvent):void
+	{
+		p9.stopDrag();
+	}
+	if (t9.hitTestObject(p9.p9t9)){
+		p9.x = 261;
+		p9.y = 108;
+		checkGame();
+		}
+		
+	/* Piece 10 drag and drop code */
+	p10.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_10);
+	
+	function fl_ClickToDrag_10(event:MouseEvent):void
+	{
+		p10.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_10);
+	
+	function fl_ReleaseToDrop_10(event:MouseEvent):void
+	{
+		p10.stopDrag();
+	}
+	if (t10.hitTestObject(p10.p10t10)){
+		p10.x = 251.75;
+		p10.y = 192.50;
+		checkGame();
+		}
+		
+	/* Piece 11 drag and drop code */
+	p11.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_11);
+	
+	function fl_ClickToDrag_11(event:MouseEvent):void
+	{
+		p11.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_11);
+	
+	function fl_ReleaseToDrop_11(event:MouseEvent):void
+	{
+		p11.stopDrag();
+	}
+	if (t11.hitTestObject(p11.p11t11)){
+		p11.x = 249.50;
+		p11.y = 281.50;
+		checkGame();
+		}
+		
+	/* Piece 12 drag and drop code */
+	p12.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_12);
+	
+	function fl_ClickToDrag_12(event:MouseEvent):void
+	{
+		p12.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_12);
+	
+	function fl_ReleaseToDrop_12(event:MouseEvent):void
+	{
+		p12.stopDrag();
+	}
+	if (t12.hitTestObject(p12.p12t12)){
+		p12.x = 257.50;
+		p12.y = 386.50;
+		checkGame();
+		}
+		
+	/* Piece 13 drag and drop code */
+	p13.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_13);
+	
+	function fl_ClickToDrag_13(event:MouseEvent):void
+	{
+		p13.startDrag();
+		
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_13);
+	
+	function fl_ReleaseToDrop_13(event:MouseEvent):void
+	{
+		p13.stopDrag();
+		
+
+	}
+	if (t13.hitTestObject(p13.p13t13)){
+		p13.x = 364.15;
+		p13.y = 115.50;
+		checkGame();
+		}
+	
+	/* Piece 14 drag and drop code */
+	p14.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_14);
+	
+	function fl_ClickToDrag_14(event:MouseEvent):void
+	{
+		p14.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_14);
+	
+	function fl_ReleaseToDrop_14(event:MouseEvent):void
+	{
+		p14.stopDrag();
+	}
+	if (t14.hitTestObject(p14.p14t14)){
+		p14.x = 351.45;
+		p14.y = 215;
+		checkGame();
+		}
+	
+	/* Piece 15 drag and drop code */
+	p15.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_15);
+	
+	function fl_ClickToDrag_15(event:MouseEvent):void
+	{
+		p15.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_15);
+	
+	function fl_ReleaseToDrop_15(event:MouseEvent):void
+	{
+		p15.stopDrag();
+	}
+	if (t15.hitTestObject(p15.p15t15)){
+		p15.x = 357.85;
+		p15.y = 292.35;
+		checkGame();
+		}
+	
+	/* Piece 16 drag and drop code */
+	p16.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_16);
+	
+	function fl_ClickToDrag_16(event:MouseEvent):void
+	{
+		p16.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_16);
+	
+	function fl_ReleaseToDrop_16(event:MouseEvent):void
+	{
+		p16.stopDrag();
+	}
+	if (t16.hitTestObject(p16.p16t16)){
+		p16.x = 353;
+		p16.y = 383.50;
+		checkGame();
+		}
+	
+	/* Piece 17 drag and drop code */
+	p17.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_17);
+	
+	function fl_ClickToDrag_17(event:MouseEvent):void
+	{
+		p17.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_17);
+	
+	function fl_ReleaseToDrop_17(event:MouseEvent):void
+	{
+		p17.stopDrag();
+	}
+	if (t17.hitTestObject(p17.p17t17)){
+		p17.x = 453.35;
+		p17.y = 107;
+		checkGame();
+		}
+	
+	/* Piece 18 drag and drop code */
+	p18.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_18);
+	
+	function fl_ClickToDrag_18(event:MouseEvent):void
+	{
+		p18.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_18);
+	
+	function fl_ReleaseToDrop_18(event:MouseEvent):void
+	{
+		p18.stopDrag();
+	}
+	if (t18.hitTestObject(p18.p18t18)){
+		p18.x = 454.45;
+		p18.y = 200.50;
+		checkGame();
+		}
+		
+	/* Piece 19 drag and drop code */
+	p19.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_19);
+	
+	function fl_ClickToDrag_19(event:MouseEvent):void
+	{
+		p19.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_19);
+	
+	function fl_ReleaseToDrop_19(event:MouseEvent):void
+	{
+		p19.stopDrag();
+	}
+	if (t19.hitTestObject(p19.p19t19)){
+		p19.x = 454.50;
+		p19.y = 292.20;
+		checkGame();
+		}
+	
+	/* Piece 20 drag and drop code */
+	p20.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_20);
+	
+	function fl_ClickToDrag_20(event:MouseEvent):void
+	{
+		p20.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_20);
+	
+	function fl_ReleaseToDrop_20(event:MouseEvent):void
+	{
+		p20.stopDrag();
+	}
+	if (t20.hitTestObject(p20.p20t20)){
+		p20.x = 452.45;
+		p20.y = 384;
+		checkGame();
+		}
+		
+	/* Piece 21 drag and drop code */
+	p21.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_21);
+	
+	function fl_ClickToDrag_21(event:MouseEvent):void
+	{
+		p21.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_21);
+	
+	function fl_ReleaseToDrop_21(event:MouseEvent):void
+	{
+		p21.stopDrag();
+	}
+	if (t21.hitTestObject(p21.p21t21)){
+		p21.x = 544.95;
+		p21.y = 107.65;
+		checkGame();
+		}
+		
+	/* Piece 22 drag and drop code */
+	p22.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_22);
+	
+	function fl_ClickToDrag_22(event:MouseEvent):void
+	{
+		p22.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_22);
+	
+	function fl_ReleaseToDrop_22(event:MouseEvent):void
+	{
+		p22.stopDrag();
+	}
+	if (t22.hitTestObject(p22.p22t22)){
+		p22.x = 543.95;
+		p22.y = 201;
+		checkGame();
+		}
+		
+	/* Piece 23 drag and drop code */
+	p23.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_23);
+	
+	function fl_ClickToDrag_23(event:MouseEvent):void
+	{
+		p23.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_23);
+	
+	function fl_ReleaseToDrop_23(event:MouseEvent):void
+	{
+		p23.stopDrag();
+	}
+	if (t23.hitTestObject(p23.p23t23)){
+		p23.x = 546.45;
+		p23.y = 292.25;
+		checkGame();
+		}
+		
+	/* Piece 24 drag and drop code */
+	p24.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_24);
+	
+	function fl_ClickToDrag_24(event:MouseEvent):void
+	{
+		p24.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_24);
+	
+	function fl_ReleaseToDrop_24(event:MouseEvent):void
+	{
+		p24.stopDrag();
+	}
+	if (t24.hitTestObject(p24.p24t24)){
+		p24.x = 546.45;
+		p24.y = 385.45;
+		checkGame();
+		}
+}
+function checkGame():void{
+	if(p1.x == 59 && p1.y == 100.50 
+	   && p2.x == 52 && p2.y == 178.25 
+	   && p3.x == 62.50 && p3.y == 279.40 
+	   && p4.x == 64 && p4.y == 387 
+	   && p5.x == 155.50 && p5.y == 106.50 
+	   && p6.x == 143.15 && p6.y == 190.50 
+	   && p7.x == 154.45 && p7.y == 282 
+	   && p8.x == 165.25 && p8.y == 384 
+	   && p9.x == 261 && p9.y == 108 
+	   && p10.x == 251.75 && p10.y == 192.50
+	   && p11.x == 249.50 && p11.y == 281.50 
+	   && p12.x == 257.50 && p12.y == 386.50
+	   && p13.x == 364.15 && p13.y == 115.50
+	   && p14.x == 351.45 && p14.y == 215
+	   && p15.x == 357.85 && p15.y == 292.35
+	   && p16.x == 353 && p16.y == 383.50
+	   && p17.x == 453.35 && p17.y == 107
+	   && p18.x == 454.45 && p18.y == 200.50
+	   && p19.x == 454.50 && p19.y == 292.20
+	   && p20.x == 452.45 && p20.y == 384
+	   && p21.x == 544.95 && p21.y == 107.65
+	   && p22.x == 543.95 && p22.y == 201
+	   && p23.x == 546.45 && p23.y == 292.25
+	   && p24.x == 546.45 && p24.y == 385.45){
+		gotoAndPlay("GameOver");
+	}
+} -->
+		<!--
+		<style type="text/css" media="screen">
+		
+		html, body { height:100%; background-color: #ffffff;}
+		body { margin:0; padding:0; overflow:hidden; }
+		#flashContent { width:100%; height:100%; }
+		</style>
+		-->
+		<title>Eiffel Tower Jigsaw</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Custom styles for this template -->
+    	<link href="../CSS/layout1.css" rel="stylesheet">
+		<script>
+		function goBack() {
+		    window.history.back()
+		}
+		</script>
+	</head>
+	<body>
+		<button onclick = "goBack()" class="backbtn-default">Go back</button><br><br>
+		<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="900" height="500" id="EiffelTowerJigsaw" align="middle">
+				<param name="movie" value="EiffelTowerJigsaw.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="EiffelTowerJigsaw.swf" width="900" height="500">
+					<param name="movie" value="EiffelTowerJigsaw.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+	</body>
+</html>

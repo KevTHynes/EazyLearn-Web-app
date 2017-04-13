@@ -47,13 +47,11 @@ if(isset($_POST['submit'])){
 
     <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
-
         <div class="cover-container">
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h1 class="masthead-brand">Welcome to "My History Book"</h1>
+              <h1>Welcome to "My History Book"</h1>
               
             </div>
           </div>
@@ -81,7 +79,7 @@ if(isset($_POST['submit'])){
                   <option value="Age9to10/home.html">10 years old</option>
                 </select><br>
                 <h1 class="cover-heading">2. Click to start learning!</h1>
-               <input type="submit" name="submit" value="Begin!" class="btn btn-lg btn-default">
+               <input type="submit" name="submit" value="Begin!" class="btn-default">
               
               </form>
             
@@ -90,8 +88,6 @@ if(isset($_POST['submit'])){
           </div>
 
         </div>
-
-      </div>
 
     </div>
 

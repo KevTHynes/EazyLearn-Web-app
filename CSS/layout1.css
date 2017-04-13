@@ -9,12 +9,23 @@ ul {
 		text-align: center;
 	}
 
-	li {
-		list-style: none;
+	nav li{
+	  list-style: none;
 		position: relative;
-		display: inline-block;
-		width: 100px;
-		height: 100px;
+	  display: inline-block;
+	  height: 100px;
+	  width: 100px;
+	}
+	
+	main li{
+	  list-style:none;
+	  height: 50px;
+	  width: auto;
+	}
+	
+  button {
+    background-color: black;
+	  
 	}
 
 
@@ -110,12 +121,28 @@ a:hover {
   color: white;
   padding: 16px;
   font-size: 16px;
-  border: none;
+  border: 1px;
   cursor: pointer;
   text-decoration: none;
 }
 .btn-default:hover, .btn-default:focus{
   background-color: #00ccff;
+  
+}
+
+.backbtn-default{
+  background-color: #ff0000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  float: left;
+}
+.backbtn-default:hover, .backbtn-default:focus{
+  background-color: #ffff00;
+  color: black;
   
 }
 
@@ -278,7 +305,7 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    
     top: 0;
   }
   .mastfoot {
@@ -306,16 +333,27 @@ body {
 }
 
 .modal-header{
-  background-color:#DCDCDC ;
-  color:black;
+  background-color:black ;
+  
 }
 
 .modal-body{
-  background-color: ;
-  color:black;
+  background-color:black ;
 }
 
 .modal-footer{
-  background-color:#DCDCDC ;
-  color:black;
+  background-color:black ;
+}
+
+.btn{
+  background-color:black ;
+  
+}
+table, th, td {
+    border-collapse: collapse;
+    
+}
+th, td {
+    padding: 5px;
+    text-align: center;    
 }

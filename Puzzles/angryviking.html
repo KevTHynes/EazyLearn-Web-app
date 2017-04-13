@@ -1,15 +1,198 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
-		<title>AngryViking</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- ActionScript code for the "AngryViking" puzzle game:
+    	import flash.events.MouseEvent;
+		stop();
+		
+		var offset:int = 5;
+		
+		var helmetStartX: int = 437;
+		var helmetStartY: int = 206;
+		var helmetEndX: int = 200;
+		var helmetEndY: int = 1;
+		helmet.buttonMode = true;
+		helmet.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		helmet.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var weaponStartX: int = 413;
+		var weaponStartY: int = 309;
+		var weaponEndX: int = 314;
+		var weaponEndY: int = 164;
+		weapon.buttonMode = true;
+		weapon.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		weapon.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var shieldStartX: int = 356;
+		var shieldStartY: int = 279;
+		var shieldEndX: int = 148;
+		var shieldEndY: int = 210;
+		shield.buttonMode = true;
+		shield.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		shield.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var shirtStartX: int = 4;
+		var shirtStartY: int = 38;
+		var shirtEndX: int = 174;
+		var shirtEndY: int = 149;
+		shirt.buttonMode = true;
+		shirt.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		shirt.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var coatStartX: int = 347;
+		var coatStartY: int = 118;
+		var coatEndX: int = 210;
+		var coatEndY: int = 150;
+		coat.buttonMode = true;
+		coat.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		coat.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var pantsStartX: int = 35;
+		var pantsStartY: int = 182;
+		var pantsEndX: int = 202;
+		var pantsEndY: int = 232;
+		pants.buttonMode = true;
+		pants.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		pants.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var leftbootStartX: int = 104;
+		var leftbootStartY: int = 300;
+		var leftbootEndX: int = 276;
+		var leftbootEndY: int = 313;
+		leftboot.buttonMode = true;
+		leftboot.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		leftboot.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		var rightbootStartX: int = 0;
+		var rightbootStartY: int = 300;
+		var rightbootEndX: int = 165;
+		var rightbootEndY: int = 313;
+		rightboot.buttonMode = true;
+		rightboot.addEventListener(MouseEvent.MOUSE_DOWN, startDragging);
+		rightboot.addEventListener(MouseEvent.MOUSE_UP, stopDragging);
+		
+		function startDragging(e:MouseEvent){
+			e.currentTarget.startDrag();
+		}
+		function stopDragging(e:MouseEvent){
+			e.currentTarget.stopDrag();
+			switch(e.currentTarget){
+				case helmet:
+				if(helmet.x < helmetEndX - offset || helmet.x > helmetEndX + offset || helmet.y < helmetEndY - offset || helmet.y > helmetEndY + offset){
+					helmet.x = helmetStartX;
+					helmet.y = helmetStartY;
+				}
+				else{
+					helmet.x = helmetEndX;
+					helmet.y = helmetEndY;
+					checkGame();
+				}
+				break;
+				case weapon:
+				if(weapon.x < weaponEndX - offset || weapon.x > weaponEndX + offset || weapon.y < weaponEndY - offset || weapon.y > weaponEndY + offset){
+					weapon.x = weaponStartX;
+					weapon.y = weaponStartY;
+				}
+				else{
+					weapon.x = weaponEndX;
+					weapon.y = weaponEndY;
+					checkGame();
+				}
+				break;
+				case shield:
+				if(shield.x < shieldEndX - offset || shield.x > shieldEndX + offset || shield.y < shieldEndY - offset || shield.y > shieldEndY + offset){
+					shield.x = shieldStartX;
+					shield.y = shieldStartY;
+				}
+				else{
+					shield.x = shieldEndX;
+					shield.y = shieldEndY;
+					checkGame();
+				}
+				break;
+				case shirt:
+				if(shirt.x < shirtEndX - offset || shirt.x > shirtEndX + offset || shirt.y < shirtEndY - offset || shirt.y > shirtEndY + offset){
+					shirt.x = shirtStartX;
+					shirt.y = shirtStartY;
+				}
+				else{
+					shirt.x = shirtEndX;
+					shirt.y = shirtEndY;
+					checkGame();
+				}
+				break;
+				case coat:
+				if(coat.x < coatEndX - offset || coat.x > coatEndX + offset || coat.y < coatEndY - offset || coat.y > coatEndY + offset){
+					coat.x = coatStartX;
+					coat.y = coatStartY;
+				}
+				else{
+					coat.x = coatEndX;
+					coat.y = coatEndY;
+					checkGame();
+				}
+				break;
+				case pants:
+				if(pants.x < pantsEndX - offset || pants.x > pantsEndX + offset || pants.y < pantsEndY - offset || pants.y > pantsEndY + offset){
+					pants.x = pantsStartX;
+					pants.y = pantsStartY;
+				}
+				else{
+					pants.x = pantsEndX;
+					pants.y = pantsEndY;
+					checkGame();
+				}
+				break;
+				case leftboot:
+				if(leftboot.x < leftbootEndX - offset || leftboot.x > leftbootEndX + offset || leftboot.y < leftbootEndY - offset || leftboot.y > leftbootEndY + offset){
+					leftboot.x = leftbootStartX;
+					leftboot.y = leftbootStartY;
+				}
+				else{
+					leftboot.x = leftbootEndX;
+					leftboot.y = leftbootEndY;
+					checkGame();
+				}
+				break;
+				case rightboot:
+				if(rightboot.x < rightbootEndX - offset || rightboot.x > rightbootEndX + offset || rightboot.y < rightbootEndY - offset || rightboot.y > rightbootEndY + offset){
+					rightboot.x = rightbootStartX;
+					rightboot.y = rightbootStartY;
+				}
+				else{
+					rightboot.x = rightbootEndX;
+					rightboot.y = rightbootEndY;
+					checkGame();
+				}
+				break;
+			}
+		}
+		
+		function checkGame():void{
+			if(helmet.x == helmetEndX && helmet.y == helmetEndY && weapon.x == weaponEndX && weapon.y == weaponEndY && shield.x == shieldEndX && shield.y == shieldEndY && shirt.x == shirtEndX && shirt.y == shirtEndY && coat.x == coatEndX && coat.y == coatEndY && pants.x == pantsEndX && pants.y == pantsEndY && leftboot.x == leftbootEndX && leftboot.y == leftbootEndY && rightboot.x == rightbootEndX && rightboot.y == rightbootEndY){
+				gotoAndPlay("gameover");
+			}
+		} -->
+		<!--
 		<style type="text/css" media="screen">
+		
 		html, body { height:100%; background-color: #ffffff;}
 		body { margin:0; padding:0; overflow:hidden; }
 		#flashContent { width:100%; height:100%; }
 		</style>
+		-->
+		<title>Angry Viking Puzzle</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Custom styles for this template -->
+    	<link href="../CSS/layout1.css" rel="stylesheet">
+		<script>
+		function goBack() {
+		    window.history.back()
+		}
+		</script>
 	</head>
 	<body>
+		<button onclick = "goBack()" class="backbtn-default">Go back</button><br><br>
 		<div id="flashContent">
 			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="550" height="400" id="AngryViking" align="middle">
 				<param name="movie" value="AngryViking.swf" />
