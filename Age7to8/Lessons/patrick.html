@@ -1,132 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<!-- ActionScript code for the "St Patrick Jigsaw" puzzle game:
+    	import flash.events.Event;
+stop();
 
-    <title>Home</title>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+stage.addEventListener(Event.ENTER_FRAME,EntFrame);
+function EntFrame(e:Event):void{
+	
+	/* Piece 1 drag and drop code */
+	p1.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag);
+	
+	function fl_ClickToDrag(event:MouseEvent):void
+	{
+		p1.startDrag();
+		
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop);
+	
+	function fl_ReleaseToDrop(event:MouseEvent):void
+	{
+		p1.stopDrag();
+		
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Bootstrap core CSS -->
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-<<<<<<< HEAD
-    <link href="CSS/layou.css" rel="stylesheet">
-=======
-    <link href="../../CSS/layout1.css" rel="stylesheet">
->>>>>>> 08875175d634422560bd543af6c2fad7f1d18e20
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-          <nav>
-            <script> 
-
-                function show_alert() { 
-                
-                  var msg = "Click on a country!";
-                  
-                  alert(msg); 
-                
-                }
-              
-            </script>
-                <ul>
-                  <li><a href="home.html" class="round green">Home</a></li>
-                  <li><a href="#" class="round red">Puzzle</a></li>
-                	<li><a href="#" class="round yellow">Grades</a></li>
-                	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
-                </ul> 
-              </nav>
-
-          <div class="masthead clearfix">
-            <div class="inner">
-             
-              
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <div class="w3-content w3-display-container">
-  <img class="mySlides" src="patrick1.jpg" style="width:100% height:100%">
-  <object width="250" height="450">
-		<embed class="mySlides" src="patrick.swf" width="250" height="450px"> 
-		</embed>
-  </object>
-  <img class="mySlides" src="patrick1.jpg" style="width:250px height:400px">
-  <img class="mySlides" src="trollface.jpg" style="width:250px height:400px">
-
-  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-</div>
-</center>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+	}
+	if (t1.hitTestObject(p1.t1p1)){
+		p1.x = 112.15;
+		p1.y = 116.50;
+		checkGame();
+		}
+	
+	/* Piece 2 drag and drop code */
+	p2.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_2);
+	
+	function fl_ClickToDrag_2(event:MouseEvent):void
+	{
+		p2.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_2);
+	
+	function fl_ReleaseToDrop_2(event:MouseEvent):void
+	{
+		p2.stopDrag();
+	}
+	if (t2.hitTestObject(p2.t2p2)){
+		p2.x = 316.50;
+		p2.y = 93.40;
+		checkGame();
+		}
+	
+	/* Piece 3 drag and drop code */
+	p3.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_3);
+	
+	function fl_ClickToDrag_3(event:MouseEvent):void
+	{
+		p3.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_3);
+	
+	function fl_ReleaseToDrop_3(event:MouseEvent):void
+	{
+		p3.stopDrag();
+	}
+	if (t3.hitTestObject(p3.t3p3)){
+		p3.x = 118.20;
+		p3.y = 274;
+		checkGame();
+		}
+	
+	/* Piece 4 drag and drop code */
+	p4.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_4);
+	
+	function fl_ClickToDrag_4(event:MouseEvent):void
+	{
+		p4.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_4);
+	
+	function fl_ReleaseToDrop_4(event:MouseEvent):void
+	{
+		p4.stopDrag();
+	}
+	if (t4.hitTestObject(p4.t4p4)){
+		p4.x = 340.05;
+		p4.y = 242.85;
+		checkGame();
+		}
+	
+	/* Piece 5 drag and drop code */
+	p5.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_5);
+	
+	function fl_ClickToDrag_5(event:MouseEvent):void
+	{
+		p5.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_5);
+	
+	function fl_ReleaseToDrop_5(event:MouseEvent):void
+	{
+		p5.stopDrag();
+	}
+	if (t5.hitTestObject(p5.t5p5)){
+		p5.x = 114.45;
+		p5.y = 404;
+		checkGame();
+		}
+	
+	/* Piece 6 drag and drop code */
+	p6.addEventListener(MouseEvent.MOUSE_DOWN, fl_ClickToDrag_6);
+	
+	function fl_ClickToDrag_6(event:MouseEvent):void
+	{
+		p6.startDrag();
+	}
+	
+	stage.addEventListener(MouseEvent.MOUSE_UP, fl_ReleaseToDrop_6);
+	
+	function fl_ReleaseToDrop_6(event:MouseEvent):void
+	{
+		p6.stopDrag();
+	}
+	if (t6.hitTestObject(p6.t6p6)){
+		p6.x = 311.75;
+		p6.y = 398.85;
+		checkGame();
+		}
 }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
+function checkGame():void{
+	if(p1.x == 112.15 && p1.y == 116.50 && p2.x == 316.50 && p2.y == 93.40 && p3.x == 118.20 && p3.y == 274 && p4.x == 340.05 && p4.y == 242.85 && p6.x == 311.75 && p6.y == 398.85){
+		gotoAndPlay("GameOver");
+	}
+} -->
+		<!--
+		<style type="text/css" media="screen">
+		
+		html, body { height:100%; background-color: #ffffff;}
+		body { margin:0; padding:0; overflow:hidden; }
+		#flashContent { width:100%; height:100%; }
+		</style>
+		-->
+		<title>St Patrick Jigsaw</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Custom styles for this template -->
+    	<link href="../CSS/layout1.css" rel="stylesheet">
+		<script>
+function goBack() {
+    window.history.back()
 }
 </script>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+	</head>
+	<body>
+		<button onclick = "goBack()" class="backbtn-default">Go back</button><br><br>
+	<div id="flashContent">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="750" height="500" id="StPatrickJigsaw" align="middle">
+				<param name="movie" value="7-8.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="7-8.swf" width="750" height="500">
+					<param name="movie" value="7-8.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+	</body>
 </html>
