@@ -1,46 +1,6 @@
-<?php include 'database.php'; ?>
 <?php session_start(); ?>
-
 <!DOCTYPE html>
 <html>
-    <?php
-    //set question number
-    $number = (int) $_GET['n'];
-    
-    /*
-    * Get total questions
-    */
-    $query = "SELECT * FROM questions";
-    //Get results
-    $results = $mysqli->query($query) or die ($mysqli->error._LINE_);
-    $total = $results->num_rows;
-        
-        
-    /*
-    *Get question
-    */
-    
-    $query = "SELECT * FROM questions
-                WHERE question_number = $number";
-                
-    //Get result
-    $result = $mysqli->query($query) or die($mysqli->error._LINE_);
-    
-    $question = $result->fetch_assoc();
-    
-    
-    /*
-    *Get Choices
-    */
-    
-    $query = "SELECT * FROM choices
-                WHERE question_number = $number";
-                
-    //Get results
-    $choices = $mysqli->query($query) or die($mysqli->error._LINE_);
-    
-
-?>
     <head>
         <meta charset="utf-8"/>
         <title>PHP Quizzer</title>
@@ -58,7 +18,7 @@
         <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     
         <!-- Custom styles for this template -->
-        <link href="../../CSS/layout1.css" rel="stylesheet">
+        <link href="../CSS/layout1.css" rel="stylesheet">
     
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -86,29 +46,20 @@
                   
                 </script>
                     <ul>
-                      <li><a href="../home.html" class="round green">Home</a></li>
-                      <li><a href="../puzzle.html" class="round red">Puzzle</a></li>
-                    	<li><a href="../achieve.html" class="round yellow">Grades</a></li>
+                      <li><a href="home.html" class="round green">Home</a></li>
+                      <li><a href="puzzle.html" class="round red">Puzzle</a></li>
+                    	<li><a href="achieve.html" class="round yellow">Grades</a></li>
                     	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
                     </ul> 
             </nav>
         
-
         <main>
-            <h3>Question <?php echo $question['question_number']; ?> out <?php echo $total; ?></h3>
-            <h2>
-                <?php echo $question['text']; ?>
-            </h2>
-            <form method="post" action="process.php">
-                <ul class="choices">
-                    <?php while($row = $choices->fetch_assoc()): ?>
-                        <li><input name="choice" type="radio" value="<?php echo $row['id']; ?>"/><?php echo $row['text']; ?></li>
-                    <?php endwhile; ?>
-                </ul>
-                <input type="submit" value="submit"/>
-                <input type="hidden" name="number" value="<?php echo $number; ?>"/>
-            </form>
+                <h1>You're Done!</h1>
+                <h3>Congrata! You have completed the test</h3>
+                <h2>Final Score: <?php echo $_SESSION['score']; ?></h2>
+                <a href="question.php?n=1" class="start">Take Again</a>
         </main>
         </div>
+        
     </body>
 </html>
