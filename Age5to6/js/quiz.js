@@ -1,5 +1,5 @@
 var score = 0; //set score to 0
-var total = 5; //Total number of questions
+var total = 3; //Total number of questions
 var point = 1; //Points per correct answer
 var highest = total * point;
 
@@ -9,8 +9,6 @@ function init() {
   sessionStorage.setItem('a1','b');
   sessionStorage.setItem('a2','d');
   sessionStorage.setItem('a3','c');
-  sessionStorage.setItem('a4','a');
-  sessionStorage.setItem('a5','b');
 }
 
 $(document).ready(function() {
@@ -81,7 +79,7 @@ function process(n){
     }
   
   if(n == total){
-    $('#results').html('<h3> Your final score is: ' + score +' out of 5</h3> <a href="irelandQ.html"> Take Quiz Again </a>');
+    $('#results').html('<h3> Your final score is: ' + score +' out of 3</h3> <a href="irelandQ.html"> Take Quiz Again </a>');
   }
   return false;
 }
@@ -124,7 +122,7 @@ function process(n){
     if(submitted4 == sessionStorage.a5){
       score++;
     }
-    $('#results').html('<h3> Your final score is: ' + score +' out of 5</h3> <a href="../irelandQ.html"> Take Quiz Again </a>');
+    $('#results').html('<h3> Your final score is: ' + score +' out of 3</h3> <a href="../irelandQ.html"> Take Quiz Again </a>');
   }
   return false;
 }*/

@@ -19,8 +19,10 @@ ul {
 	
 	main li{
 	  list-style:none;
-	  height: 50px;
-	  width: auto;
+	  position: relative;
+	  display: block;
+	  width:auto;
+	  height:50px;
 	}
 	
   button {
@@ -357,3 +359,4 @@ th, td {
     padding: 5px;
     text-align: center;    
 }
+
