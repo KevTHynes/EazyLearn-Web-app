@@ -1,3 +1,4 @@
+// reference https://www.youtube.com/watch?v=oLH4uQzbNxI
 var score = 0; //set score to 0
 var total = 5; //Total number of questions
 var point = 1; //Points per correct answer
