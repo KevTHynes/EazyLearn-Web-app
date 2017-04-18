@@ -78,7 +78,7 @@
     
                     function show_alert() { 
                     
-                      var msg = "Select a country to begin!";
+                      var msg = "Select an answer!";
                       
                       alert(msg); 
                     
@@ -88,8 +88,7 @@
                     <ul>
                       <li><a href="home.html" class="round green">Home</a></li>
                       <li><a href="puzzle.html" class="round red">Puzzle</a></li>
-                    	<li><a href="achieve.html" class="round yellow">Grades</a></li>
-                    	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
+                      <li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
                     </ul> 
             </nav>
         
