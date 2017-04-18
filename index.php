@@ -1,15 +1,22 @@
 <?php
 
 //If age is not selected, error message will pop up, else, user will be directed to page depending on age selected!
-
 if(isset($_POST['submit'])){
+   $fname = $_POST['fname'];
    $varAge = $_POST['formAge'];
-   $errorMessage = "";
+   $errorMessage[0] = "";
+   $errorMessage[1] = "";
    
-   if($_POST['formAge'] == ""){
-      $errorMessage = '<span style = "color:red;font-size:20px;">You did not select your age!</span><br>';
+   
+    if($_POST['fname'] == ""){
+      $errorMessage[0] = '<span style = "color:red;font-size:20px;">You forgot your name!</span><br>';
+    }
+    if($_POST['formAge'] == ""){
+      $errorMessage[1] = '<span style = "color:red;font-size:20px;">You did not select your age!</span><br>';
     }
     else{
+  		session_start();
+  		$_SESSION['fname'] = $fname;
       header("Location: ".$_POST['formAge']);
       exit;
     }
@@ -62,18 +69,23 @@ if(isset($_POST['submit'])){
            
               
               <form method="post" action="">
-                <h1>1. How old are you?</h1>
-                
+                <h1>1. What is your first name?</h1>
+                 <?php
+                 echo $errorMessage[0];
+                 ?>
+                <input type="fname" name="fname" id="fname" placeholder="Enter first name here">
+
+                <h1>2. How old are you?</h1>
                 
                 <!--"reference for option values in php code" http://stackoverflow.com/questions/19136904/get-dropdown-selected-value-and-redirect-that-page-on-button-click -->
                  <?php
-                  echo $errorMessage ;
+                  echo $errorMessage[1];
                  ?>
                 <select name="formAge">
                   <option value="">Select age</option>
-                  <option value="Age5to6/home.html">5 to 6 years old</option>
-                  <option value="Age7to8/home.html">7 to 8 years old</option>
-                  <option value="Age9to10/home.html">9 to 10 years old</option>
+                  <option value="Age5to6/home.php">5 to 6 years old</option>
+                  <option value="Age7to8/home.php">7 to 8 years old</option>
+                  <option value="Age9to10/home.php">9 to 10 years old</option>
                 </select><br>
                 <h1 class="cover-heading">2. Click to start learning!</h1>
                <input type="submit" name="submit" value="Begin!" class="btn-default">
@@ -87,6 +99,5 @@ if(isset($_POST['submit'])){
         </div>
 
     </div>
-
   </body>
 </html>

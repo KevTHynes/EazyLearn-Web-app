@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,7 +66,8 @@
           
             <div class="row">
               <div class="col-xs-12 col-lg-12">
-               <h2>Hello Kevin! Welcome! age 5-6</h2>
+               <h1>Hello <?php echo $_SESSION['fname']; ?>! Welcome, now go have some fun!</h1>
+
               </div>
             </div>
             
@@ -215,5 +219,9 @@
         </div>
       </div>
     </div>
+    <hr>
+    <div class = "mastfoot">
+  <a href="../PHP/feedback.php">Let us know what you think by clicking here</a>
+</div>
   </body>
 </html>
