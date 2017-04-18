@@ -47,21 +47,22 @@
               <script> 
 
                 function show_alert() { 
-                
-                  var msg = "Select a game!";
-                  
+                  var msg = "Select a game by clicking a button below the picture!";
                   alert(msg); 
-                
+                }
+                function play(){
+                  var audio = document.getElementById("audio");
+                  audio.play();
                 }
               
             </script>
                 <ul>
                   <li><a href="home.html" class="round green">Home</a></li>
                   <li><a href="puzzle.html" class="round red">Puzzle</a></li>
-                	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
+                	<li><a href="#" onClick="play(), show_alert()" class="round pink">Help</a></li>
                 </ul> 
               </nav>
-              
+              <audio id="audio" src="../Audio/puzzles.mp3" ></audio>
           
             <div class="row">
               <div class="col-xs-12 col-lg-6">
