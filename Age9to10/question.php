@@ -104,7 +104,7 @@
                         <li><input name="choice" type="radio" value="<?php echo $row['id']; ?>"/><?php echo $row['text']; ?></li>
                     <?php endwhile; ?>
                 </ul>
-                <input type="submit" value="submit"/>
+                <input type="submit" value="submit" class="btn-default"/>
                 <input type="hidden" name="number" value="<?php echo $number; ?>"/>
             </form>
         </main>

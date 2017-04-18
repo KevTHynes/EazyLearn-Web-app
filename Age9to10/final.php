@@ -54,7 +54,7 @@
         
         <main>
                 <h1>You're Done!</h1>
-                <h3>Congrata! You have completed the test</h3>
+                <h3>Congratulations! You have completed the test</h3>
                 <h2>Final Score: <?php echo $_SESSION['score']; ?></h2>
                 <a href="question.php?n=1" class="start">Take Again</a>
         </main>
