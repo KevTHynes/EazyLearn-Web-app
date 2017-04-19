@@ -46,7 +46,7 @@
                 var x, i, xmlDoc, table;
                 xmlDoc = xml.responseXML;
                 table = "<tr><th>Name</th><th>Rating</th><th>Their comments</th></tr>";
-                x = xmlDoc.getElementsByTagName("feedbacks")
+                x = xmlDoc.getElementsByTagName("feedback")
                 for (i = 0; i < x.length; i++) { 
                   table += "<tr><td>" + 
                   x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +

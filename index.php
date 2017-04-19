@@ -41,7 +41,7 @@ if(isset($_POST['submit'])){
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h1>Welcome to "My History Book"</h1>
+              <h1><img src="Images/logo16.png" style="width:550px;height:150;" ></h1>
               
             </div>
           </div>
