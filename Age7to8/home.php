@@ -222,7 +222,7 @@
     </div>
     <hr>
     <div class = "mastfoot">
-  <a href="../PHP/feedback.php">Let us know what you think by clicking here</a>
+  <p>Let us know what you think? provide us with some feedback by clicking<a href="../PHP/feedback.php">HERE!</a></p>
 </div>
   </body>
 </html>
