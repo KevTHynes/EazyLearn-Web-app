@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../CSS/layout1.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+            <script> 
+
+                function show_alert() { 
+                
+                  var msg = "Select an answer!";
+                  
+                  alert(msg); 
+                
+                }
+              
+            </script>
+                <ul>
+                  <li><a href="home.php" class="round green">Home</a></li>
+                  <li><a href="puzzle.html" class="round red">Puzzle</a></li>
+                	<li><a href="#" onClick="show_alert()" class="round pink">Help</a></li>
+                </ul> 
+          </nav>
+      
+      <div class="row">
+        <div class="col-xs-12 col-lg-12">
+      <main> <!---- Quiz Reference https://www.youtube.com/watch?v=Itb_T5uyPV4---->
+        <form class="questionForm" id="q1" data-question="1">
+          <h3>1.Where is England located in the world?</h3>
+          <ul>
+            <li><input name="q1" type="radio" value="a"/> Asia</li>
+            <li><input name="q1" type="radio" value="b"/> Europe</li>
+            <li><input name="q1" type="radio" value="c"/> America</li>
+            <li><input name="q1" type="radio" value="d"/> Africa</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        
+        <form class="questionForm" id="q2" data-question="2">
+          <h3>
+            2. How many people lives in England?
+          </h3>
+          <ul>
+            <li><input name="q2" type="radio" value="a"/>5 million</li>
+            <li><input name="q2" type="radio" value="b"/>100 million</li>
+            <li><input name="q2" type="radio" value="c"/>10 million</li>
+            <li><input name="q2" type="radio" value="d"/>64 million</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        
+        <form class="questionForm" id="q3" data-question="3">
+          <h3>
+            3. What is the main language used in England?
+          </h3>
+          <ul>
+            <li><input name="q3" type="radio" value="a"/>German</li>
+            <li><input name="q3" type="radio" value="b"/>French</li>
+            <li><input name="q3" type="radio" value="c"/>English</li>
+            <li><input name="q3" type="radio" value="d"/>Spanish</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        
+        <form class="questionForm" id="q4" data-question="4">
+          <h3>
+            4. How many countries are there in England ?
+          </h3>
+          <ul>
+            <li><input name="q4" type="radio" value="a"/>4</li>
+            <li><input name="q4" type="radio" value="b"/>2</li>
+            <li><input name="q4" type="radio" value="c"/>8</li>
+            <li><input name="q4" type="radio" value="d"/>6</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        
+        <form class="questionForm" id="q5" data-question="5">
+          <h3>
+            5. Who is the current Queen of England??
+          </h3>
+          <ul>
+            <li><input name="q5" type="radio" value="a"/>Queen Victoria</li>
+            <li><input name="q5" type="radio" value="b"/>Queen Elizabeth the second</li>
+            <li><input name="q5" type="radio" value="c"/>Queen Mary of England the second</li>
+            <li><input name="q5" type="radio" value="d"/>Queen Anne</li>
+          </ul>
+          <button id="submit">Submit</button>
+        </form>
+        
+        <div id="results">
+          <br>
+        </div>
+      </main>
+      </div>
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>
