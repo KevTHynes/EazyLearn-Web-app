@@ -102,10 +102,10 @@
                         <h2 class="modal-title">Iceland</h2>
                       </div>
                       <div class="modal-body">
-                        <p>Iceland (Listeni/ˈaɪərlənd/; Irish: Éire [ˈeːɾʲə] ( listen); Ulster-Scots: Airlann pronounced [ˈɑːrlən]) is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.</p>
+                        <p>Iceland (Listeni/ˈaɪslənd/; Icelandic: Ísland pronounced: [ˈistlant])[7] is a Nordic island country in the North Atlantic Ocean. It has a population of 332,529 and an area of 103,000 km2 (40,000 sq mi), making it the most sparsely populated country in Europe.</p>
                       </div>
                       <div class="modal-footer">
-                        <a href="patrick.html"><button class="btn" >History lesson</button></a>
+                        <a href=""><button class="btn" >Not yet available</button></a>
                       </div>
                     </div><!---end modal content--->
                   </div><!-- end. modal-dialog--->
@@ -119,7 +119,7 @@
                         <h2 class="modal-title">UK</h2>
                       </div>
                       <div class="modal-body">
-                        <p>UK (Listeni/ˈaɪərlənd/; Irish: Éire [ˈeːɾʲə] ( listen); Ulster-Scots: Airlann pronounced [ˈɑːrlən]) is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.</p>
+                        <p>The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a sovereign country in western Europe.</p>
                       </div>
                       <div class="modal-footer">
                         <a href="uklesson.html"><button class="btn" >History lesson</button></a>
@@ -136,10 +136,10 @@
                         <h2 class="modal-title">Norway</h2>
                       </div>
                       <div class="modal-body">
-                        <p>Norway (Listeni/ˈaɪərlənd/; Irish: Éire [ˈeːɾʲə] ( listen); Ulster-Scots: Airlann pronounced [ˈɑːrlən]) is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.</p>
+                        <p>Norway (Listeni/ˈnɔːrweɪ/ nawr-way; Norwegian: About this sound Norge (Bokmål) or About this sound Noreg (Nynorsk)),[11] officially the Kingdom of Norway, is a sovereign and unitary monarchy whose territory comprises the western portion of the Scandinavian Peninsula plus the island Jan Mayen and the archipelago of Svalbard.</p>
                       </div>
                       <div class="modal-footer">
-                        <a href="patrick.html"><button class="btn" >History lesson</button></a>
+                        <a href=""><button class="btn" >Not yet available</button></a>
                       </div>
                     </div><!---end modal content--->
                   </div><!-- end. modal-dialog--->
@@ -153,10 +153,10 @@
                         <h2 class="modal-title">France</h2>
                       </div>
                       <div class="modal-body">
-                        <p>France (Listeni/ˈaɪərlənd/; Irish: Éire [ˈeːɾʲə] ( listen); Ulster-Scots: Airlann pronounced [ˈɑːrlən]) is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.</p>
+                        <p>France (French: [fʁɑ̃s]), officially the French Republic (République française [ʁepyblik fʁɑ̃sɛz]), is a country with territory in western Europe and several overseas regions and territories.</p>
                       </div>
                       <div class="modal-footer">
-                        <a href="patrick.html"><button class="btn" >History lesson</button></a>
+                        <a href=""><button class="btn" >Not yet available</button></a>
                       </div>
                     </div><!---end modal content--->
                   </div><!-- end. modal-dialog--->
