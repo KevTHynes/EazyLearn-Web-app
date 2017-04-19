@@ -1,3 +1,6 @@
+<!-- Author: Kevin Hynes-->
+<!-- php code for processing feedback: https://github.com/kevhynez/WADProject/blob/master/php/reviewProcessor.php -->
+
 <?php
 if (isset($_POST['submit'])) {
    $name = $_POST['name'];

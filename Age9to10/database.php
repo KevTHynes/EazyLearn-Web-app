@@ -1,4 +1,6 @@
 <!------ reference https://www.youtube.com/watch?v=y8ke8o0dLq4&list=PLDmvslp_VR0wWqHJjU4yX3F5z5MoVHGk1&index=3----->
+		    <!-- Author: Shengyang Yuan-->
+
 <?php
 //Create connection credentials
 $db_host = 'localhost';

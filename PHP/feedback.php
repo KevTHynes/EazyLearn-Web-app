@@ -2,9 +2,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <!-- Author: Kevin Hynes-->
+<!-- "form vaidator: https://www.w3schools.com/js/js_validation.asp" -->
         <title>Tell us what you're thinking</title>
         <link href="../CSS/layout1.css" rel="stylesheet">
-        <!-- "form vaidator: https://www.w3schools.com/js/js_validation.asp" -->
+        
         <script>
 function validateTheForm() {
     var x = document.forms["feedbackForm"]["name"].value;
