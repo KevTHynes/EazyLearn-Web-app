@@ -57,7 +57,7 @@
               
             </script>
                 <ul>
-                  <li><a href="home.html" class="round green">Home</a></li>
+                  <li><a href="home.php" class="round green">Home</a></li>
                   <li><a href="puzzle.html" class="round red">Puzzle</a></li>
                 	<li><a href="#" onClick="play(), show_alert()" class="round pink">Help</a></li>
                 </ul> 
@@ -122,7 +122,7 @@
                         <p>UK (Listeni/ˈaɪərlənd/; Irish: Éire [ˈeːɾʲə] ( listen); Ulster-Scots: Airlann pronounced [ˈɑːrlən]) is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.</p>
                       </div>
                       <div class="modal-footer">
-                        <a href="patrick.html"><button class="btn" >History lesson</button></a>
+                        <a href="uklesson.html"><button class="btn" >History lesson</button></a>
                       </div>
                     </div><!---end modal content--->
                   </div><!-- end. modal-dialog--->

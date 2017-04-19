@@ -20,6 +20,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
+    <link href="layout1.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -56,11 +57,11 @@
               
             </script>
                 <ul>
-                  <li><a href="home.html" class="round green">Home</a></li>
+                  <li><a href="home.php" class="round green">Home</a></li>
                   <li><a href="puzzle.html" class="round red">Puzzle</a></li>
                 	<li><a href="#" onClick="play(), show_alert()" class="round pink">Help</a></li>
                 </ul> 
-          </nav>
+              </nav>
           <audio id="audio" src="../Audio/homepage.mp3" ></audio>
           <div class="container">
           
@@ -75,7 +76,7 @@
             
               <div class="col-xs-12">
                 <!---- MODAL POPUP referencehttps://www.youtube.com/watch?v=bT9Tta7xWdo------>
-
+                
                 <!----ireland----->
                 <div class="modal" id="ireland">
                   <div class="modal-dialog">
@@ -121,7 +122,7 @@
                         <p>UK (Listeni/ˈaɪərlənd/; Irish: Éire [ˈeːɾʲə] ( listen); Ulster-Scots: Airlann pronounced [ˈɑːrlən]) is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest on Earth.</p>
                       </div>
                       <div class="modal-footer">
-                        <a href="patrick.html"><button class="btn" >History lesson</button></a>
+                        <a href="uklesson.html"><button class="btn" >History lesson</button></a>
                       </div>
                     </div><!---end modal content--->
                   </div><!-- end. modal-dialog--->
