@@ -2,35 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
-
     <title>Index</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="layout1.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="CSS/layout1.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    
+    <!-- reference for XML DOM Load here: https://www.w3schools.com/xml/tryit.asp?filename=try_dom_xmlhttprequest_xml -->
   </head>
 
   <body>
@@ -44,13 +18,45 @@
           <div class="masthead clearfix">
             <div class="inner">
               <h1>Thank you for taking the time to give us some feedback. We appreciate it!</h1><br><br>
-               <a href = "index.php" class= "btn-default">Exit</a>
+               <p>you can view all the reviews<button class="btn-default" onclick="loadXMLDoc()">Here</button></p><br>
+               <p> Or you can <a href = "index.php" class= "btn-default">Exit</a></p>
             </div>
           </div>
 
           <div class="inner cover">
-        
-          
+            <table id="feedbacks" padding="5" border="1">
+            <tr><th>Name</th><th>Rating</th><th>Their comments</th></tr>
+            </table>
+            <br>
+            <script>
+              function loadXMLDoc() {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                  }
+                };
+                xmlhttp.open("GET", "XML/feedback.xml" , true);
+                xmlhttp.send();
+              }
+              
+              function myFunction(xml) {
+                var x, i, xmlDoc, table;
+                xmlDoc = xml.responseXML;
+                table = "<tr><th>Name</th><th>Rating</th><th>Their comments</th></tr>";
+                x = xmlDoc.getElementsByTagName("feedbacks")
+                for (i = 0; i < x.length; i++) { 
+                  table += "<tr><td>" + 
+                  x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+                  "</td><td>" +
+                  x[i].getElementsByTagName("rating")[0].childNodes[0].nodeValue +
+                  "</td><td>" +
+                  x[i].getElementsByTagName("text")[0].childNodes[0].nodeValue +
+                  "</td></tr>";
+                }
+                document.getElementById("feedbacks").innerHTML = table;
+              }
+            </script>
             <img src = "Images/profowl.png" height="250" width="250">
             
           </div>
@@ -61,13 +67,5 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

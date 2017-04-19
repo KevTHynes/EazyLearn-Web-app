@@ -4,6 +4,7 @@
     <head>
         <title>Tell us what you're thinking</title>
         <link href="../CSS/layout1.css" rel="stylesheet">
+        <!-- "form vaidator: https://www.w3schools.com/js/js_validation.asp" -->
         <script>
 function validateTheForm() {
     var x = document.forms["feedbackForm"]["name"].value;
@@ -49,6 +50,7 @@ function validateTheForm() {
     					
 					    <input id="submit" name="submit" type="submit" value="Submit" class="btn-default">
                     </form>
+                    
                     </div>
                     </div>
                    
